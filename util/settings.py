@@ -15,10 +15,10 @@ NUM_ACTIONS = 1
 
 # How many training samples to use - works with DATASET_USAGE = DATASET_AMOUNT.FIRST1000
 # should be less or equal than  1000
-NUM_TRAINING_SAMPLES = 1000
+NUM_TRAINING_SAMPLES = 100
 
 # Split factor
 TEST_SIZE = 0.33
 
 # Plot details
-PLOT_USER_AUC = False
+PLOT_USER_AUC = True

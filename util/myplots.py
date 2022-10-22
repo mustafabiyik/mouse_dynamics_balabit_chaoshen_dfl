@@ -23,7 +23,8 @@ def plotROC_index(fpr, tpr, roc_auc, index):
     plt.ylabel('True Positive Rate')
     plt.title('Receiver operating characteristic example')
     plt.legend(loc="lower right")
-    plt.show()
+    #plt.show()
+    plt.savefig('ROCindex.png')
 
 def plotROC(fpr, tpr, roc_auc):
     plt.figure()
@@ -36,7 +37,8 @@ def plotROC(fpr, tpr, roc_auc):
     plt.ylabel('True Positive Rate')
     plt.title('ROC')
     plt.legend(loc="lower right")
-    plt.show()
+    #plt.show()
+    plt.savefig('plotROC.png')
 
 
 def plotROCs(fpr, tpr, roc_auc, items, plot_user_auc = False):
@@ -75,4 +77,5 @@ def plotROCs(fpr, tpr, roc_auc, items, plot_user_auc = False):
     titlestr= datasetname(CURRENT_DATASET, DATASET_USAGE, NUM_TRAINING_SAMPLES)+' - '+str(NUM_ACTIONS)+' action(s)'
     plt.title(titlestr)
     plt.legend(loc="lower right")
-    plt.show()
+    #plt.show()
+    plt.savefig('plotROCs.png')
